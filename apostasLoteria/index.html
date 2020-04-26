@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="corpo">
+        Informe de 0 até qual número é possível cair no sorteio <input  type="text" id="rangeNum"/> <br>
+        Informe quantos números por sorteio <input type="text" id="quantNum"/> <br>
+        Informe quantos sorteios deseja fazer <input type="text" id="quantSort"/> <br>
+        <input type="submit" id="butSort" value="Gerar sorteio"/>
+    </div>
+     
+    <script>
+        let rangeNum = document.getElementById(`rangeNum`);
+        let rangeNumArr = [];
+        let quantNum = document.getElementById(`quantNum`);
+        let quantSort = document.getElementById(`quantSort`);
+        let clickButSort = function (){
+            //pegando o total de números 
+            for (i=1; i<=Number(rangeNum.value); i++){
+                rangeNumArr.push(i);
+            }
+            let randomNums = rangeNumArr[Math.floor(Math.random()*quantNum.value)];
+            console.log(randomNums);
+            //"debug"
+            console.log("clicou");
+        }
+        let butSort = document.getElementById(`butSort`);
+        butSort.onclick = clickButSort;
+    </script>
+</body>
+</html>
