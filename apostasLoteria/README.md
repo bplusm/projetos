@@ -15,7 +15,7 @@
   [x] Organizar de forma crescente <br>
   [x] Comparar números gerados para evitar repetições <br>
   [x] Cria segurança de não ter mais número do que o array suporta <br>
-  [ ] Gerar mais que uma sequência <br>
+  [x] Gerar mais que uma sequência <br>
   [ ] Comparar com as sequencias anteriores para evitar repetição <br>
   [ ] Associar ação ao botão de sorteio
 
